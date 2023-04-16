@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background: #bdc3c7;  /* fallback for old browsers */
+
+background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.circle1 {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  background: linear-gradient(-25deg, #d84869, #f46641);
+  box-shadow: 0 0 50px #d84869;
+  animation: circle1 15s ease infinite;
+}
+@keyframes circle1 {
+  50% {
+    left: 30%;
+    top: 7%;
+    scale: 1.11;
+  }
+}
+
+.circle2 {
+  position: absolute;
+  right: 30%;
+  bottom: 10%;
+  width: 15em;
+  height: 15em;
+  border-radius: 50%;
+  background: linear-gradient(-25deg, #1d207c, #5c41f4);
+  box-shadow: 4px 4px 40px #1d207c;
+  animation: circle2 15s ease infinite;
+}
+
+@keyframes circle2 {
+  50% {
+    bottom: 8%;
+    right: 33%;
+    scale: 1.11;
+  }
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap:15px; */
+  height: 400px;
+  /* width: 260px; */
+  color: black;
+  background-color: #ffffff1a;
+  box-shadow: 4px 4px 30px grey;
+  backdrop-filter: blur(15px);
+  padding: 20px 25px;
+  border-radius: 15px;
+  line-height: 1;
+}
+.card img {
+  border: 2px solid #ffffff30;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+.profession {
+  text-align: center;
+  color: #ffffff85;
+}
+.btn {
+  display: flex;
+  gap: 10px;
+}
+
+.share-profile {
+  padding: 9px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  background: #ffffff00;
+  border: 2px solid #ffffffb9;
+  text-transform: capitalize;
+  border-radius: 4px;
+  color: #ffffffb9;
+  cursor: pointer;
+}
+.follow-me {
+  padding: 9px 12px;
+
+  background: #ffffff00;
+  border: 2px solid #ffffffb9;
+  text-transform: capitalize;
+  border-radius: 4px;
+  color: #ffffffb9;
+  cursor: pointer;
+}
+.share-profile:hover {
+  background: #ffffffb9;
+  color: #131313;
+}
+.follow-me:hover {
+  background: #ffffffb9;
+  color: #131313;
+}
+
+/* modal */
+
+.modal {
+  position: fixed;
+  top: 56%;
+  left: 50%;
+  translate: -50% -50%;
+  border: 2px solid #ffffff59;
+  width: 400px;
+  scale: 0;
+  background: #00000088;
+  backdrop-filter: blur(10px);
+  color: white;
+  z-index: 1;
+  padding: 20px 25px;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ffffff88;
+}
+
+.close {
+  cursor: pointer;
+}
+.share {
+  font: bold;
+  margin: 15px 0;
+}
+.icon-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.icon {
+  border-radius: 50%;
+  border: 2px solid white;
+  /* padding: 5px; */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 10px;
+  margin: 10px 0;
+  transition: all 0.5s;
+}
+.icon i {
+  font-size: 27px;
+}
+#linkedin {
+    color: rgb(10, 102, 194);
+    border: 2px solid #1771e6;
+  }
+  #linkedin:hover {
+    background-color: #1771e6;
+    color: #fff;
+  }
+
+  #twitter {
+    color: #1c99e6;
+    border: 1px solid #1c99e6;
+  }
+  #twitter:hover {
+    background-color: #1c99e6;
+    color: #fff;
+  }
+  
+  #instagram {
+    color: #cb2770;
+    border: 1px solid #cb2770;
+  }
+  #instagram:hover {
+    background-color: #cb2770;
+    color: #fff;
+  }
+  
+  #whatsapp {
+    color: #2fe664;
+    border: 1px solid #2fe664;
+  }
+  #whatsapp:hover {
+    background-color: #2fe664;
+    color: #fff;
+  }
+  
+  #telegram {
+    color: #0081c2;
+    border: 1px solid #0081c2;
+  }
+  #telegram:hover {
+    background-color: #0081c2;
+    color: #fff;
+  }
+
+
+
+.active{
+  scale:1;
+}
+
+
+/* by clicking on webpage this will close the model the modal  */
+
+.overlay {
+  position: fixed;
+  background-color: #5f5f5f83;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+.overlayactive {
+  opacity: 1;
+  /* eksa matlab jo default property hai wo aa jayega using this */
+  pointer-events: initial;
+}

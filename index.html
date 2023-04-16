@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModalApp</title>
+    <link rel="stylesheet" href="modalApp.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="circle1">
+
+        </div>
+        <div class="circle2"></div>
+
+        <!-- Card -->
+        <div class="card">
+            <img src="./images/DEZYPIC.jpg (1).png" alt="dezypic">
+            <h3 class="name">Dezy Kumari</h3>
+            <p class="profession">Full Stack Developer</p>
+            <div class="btn">
+                <button onclick="openModal()" class="share-profile">
+                    <i class="fa-solid fa-share"></i>
+                    Share my profile</button>
+                <button class="follow-me">Follow me</button>
+            </div>
+        </div>
+
+
+
+        <!-- MODAL COMPONENT -->
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Share My Profile</h2>
+                <i onclick="closeModal()" class="fa-solid fa-x close"></i>
+            </div>
+            <div>
+                <h3 class="share">Share this via</h3>
+                <div class="icon-container">
+                    <a href="https://www.linkedin.com/in/dezy-kumari-8a1359213" class="icon" id="linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://mobile.twitter.com/DezyKumari8969" class="icon" id="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dezykumari8969/?next=%2F" class="icon" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="9142409221" class="icon" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="t.me/Dezy9142" class="icon" id="telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay" onclick="closeModal()"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="modalApp.js"></script>
+    <script src="https://kit.fontawesome.com/05d71ec5ea.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
